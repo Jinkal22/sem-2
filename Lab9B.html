@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Lab9B</title>
+        <style>
+            img{
+                animation-name: photo;
+                animation-duration: 3s;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+            }
+            @keyframes photo{
+                from{
+                        filter: blur(20px);
+                }
+                to{
+                    filter: blur(0px);
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="photo">
+            <img src="./Ums_files\p6.jpeg" height="500vh" width="800px">
+        </div>
+    </body>
+</html>

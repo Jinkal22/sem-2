@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>lab 9A</title>
+        <style>
+            body{
+                height: 100vh;
+            }
+            .Hello{
+                animation-name: colorchange;
+                background-color: yellowgreen;
+                animation-duration: 1s;
+                animation-iteration-count: 2;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+                height:500px;
+                width: 300px;
+                font-size:xx-large;
+                font-style: italic;
+                position: relative;
+            }
+            .Hello{
+                animation-name:direction;
+                background-color: yellowgreen;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-direction:reverse;
+                height:500px;
+                width: 300px;
+                font-size:xx-large;
+                font-style: italic;
+                position: relative;
+                animation-delay: 2s;
+               
+            }
+            @keyframes colorchange{
+                from{
+                   background-color: yellowgreen;
+                }
+                to{
+                    background-color: blueviolet;
+                }
+            }
+            @keyframes direction{
+                0%{
+                    left: 0px;
+                    top: 0px;
+                }
+                25%{
+                    left: 100%;
+                    top: 0px;
+                    background-color: aqua;
+                }
+                50%{
+                    right: 0px;
+                    top: 100%;
+                    background-color: chartreuse;
+                }
+
+                75%{
+                    left: 0px;
+                    bottom: 100%;
+                    background-color: darkmagenta;
+                }
+                100%{
+                    left: 0px;
+                    top: 0px;
+                    background-color:hotpink;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Hello">
+            Computer <br> Science <br> & <br> Engineering
+        </div>
+    </body>
+</html>

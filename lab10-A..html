@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css</title>
+	<style type="text/css">
+		body{
+			width: 100vw;
+		}
+		.left{
+			float: left;background-color: red;width: 20%;box-sizing: border-box;
+		}
+	.page{
+			  background-color: aqua;
+		      height: 100vh;
+		     }
+		.header{
+              background-color: crimson;
+              height: 10%;
+              color: white
+		       }
+		.content{
+			   background-color: orange;
+			   height: 80%;
+			   padding: 16px;
+		        }
+		.entry{
+			  background-color: black;
+			  color: white;
+	margin-block: 20px;
+	margin-inline:10px;
+		      }
+		.sidebar{
+			   background-color: black;
+			   float: right;
+			   height: 59%;
+			   width: 75%;
+			   color: white;
+			   float: right;
+			   margin-right: 20px;
+			   margin-top: 20px
+		        } 
+		.location{
+			   background-color: darkblue;
+			   height:10%;
+			   width: 100%;
+			   color: white
+		}  
+		@media screen and (max-width: 300px){
+            .sidebar{
+            	background-color: pink;
+            	width: 100%;
+            	height:80px;
+            }
+            .location{
+            	width: 100%
+            }
+            .content{
+            	background-color: maroon;
+            	width: 100%;
+
+            }
+            .left{
+            	width: 90%;
+            }
+		}   
+		@media screen and (min-width: 300px) and (max-width: 700px){
+			.sidebar{
+				background-color: midnightblue;
+				width: 100%;
+				height: 150px;
+			}
+			.content{
+				width: 100%;
+				height: 400px;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+			.left{
+				width: 100%;
+			}
+			
+		}     
+	</style>
+</head>
+<body>
+	<div class="page">page
+		<div class="header">header</div>
+		<div class="content">
+		<div class="left"style="">content
+			<div class="entry">entery</div>
+			<div class="entry">entery</div>
+			<div class="entry">entery</div>
+		 </div>
+			<div class="sidebar">sidebar</div>
+		</div>
+		<div class="location">Darshan University-Rajkot</div>
+	</div>
+</body>
+</html>
